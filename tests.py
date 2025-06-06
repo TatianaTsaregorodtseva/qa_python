@@ -42,6 +42,12 @@ class TestBooksCollector:
         books_collection.add_book_in_favorites('451 градус по Фаренгейту')
         assert books_collection.get_list_of_favorites_books() == ['Джэйн Эйр', '451 градус по Фаренгейту']
 
+    def test_get_books_for_children(self):
+        collector = BooksCollector()
+        collector.add_new_book('Маленький Принц')
+        collector.set_book_genre('Маленький Принц', 'Мультфильмы')
+        assert 'Маленький Принц' in collector.get_books_for_children()
+
     def test_set_book_genre_to_existing_book(self):
         collector = BooksCollector()
         collector.add_new_book('Гордость и предубеждение')
@@ -63,3 +69,4 @@ class TestBooksCollector:
 
     def test_get_books_with_specific_genre_by_wrong_genre(self, books_collection):
         assert len(books_collection.get_books_with_specific_genre('Роман')) == 0
+

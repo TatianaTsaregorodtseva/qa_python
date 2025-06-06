@@ -10,7 +10,8 @@
   4. test_add_book_in_favorites_not_added_in_favorites_book: проверка на добавление книги в избранное
   5. test_delete_book_from_favorites: проверка на удаление книги из избранного
   6. test_get_list_of_favorites_books: проверка на получение списка избранных книг
-  7. test_set_book_genre_to_existing_book: проверка на добавление жанра из genre для книги из books_genre
-  8. test_set_book_genre_to_not_existing_book: негативная проверка на добавление жанра из genre для книги не из books_genre
-  9. test_get_books_with_specific_genre_by_genre: проверка на вывод книг по жанру
-  10. test_get_books_with_specific_genre_by_wrong_genre: негативная проверка на вывод книг по жанру не из genre
+  7. test_get_books_for_children: проверка на вывод детских книг
+  8. test_set_book_genre_to_existing_book: проверка на добавление жанра из genre для книги из books_genre
+  9. test_set_book_genre_to_not_existing_book: негативная проверка на добавление жанра из genre для книги не из books_genre
+  10. test_get_books_with_specific_genre_by_genre: проверка на вывод книг по жанру
+  11. test_get_books_with_specific_genre_by_wrong_genre: негативная проверка на вывод книг по жанру не из genre
